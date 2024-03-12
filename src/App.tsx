@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { MoviePage } from './pages/MoviePage/MoviePage';
+import { BrowserRouter, Route, Routes} from "react-router-dom"
+import { ChooseSeats } from './pages/ChooseSeats/ChooseSeats';
+import { Checkout } from './pages/Checkout'
+import "./App.css"
 
-function App() {
+export const  App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <BrowserRouter>
+           <Routes>
+              <Route index path='/' element={<MoviePage />}/>
+              <Route path='/chooseseats/:id' element={<ChooseSeats />}/>
+              <Route path='/checkout' element={<Checkout />}/>
+          </Routes>
+      </BrowserRouter>
+  )
 }
 
-export default App;
+

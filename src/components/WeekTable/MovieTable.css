@@ -1,0 +1,31 @@
+table,td.tr, th {
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(40, 37, 29);
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+
+
+}
+
+th, tr, td {
+    padding: 8px;
+    border: 1px solid rgb(255, 255, 255);
+    
+}
+table {
+    margin: 0px;
+    width: 500px;
+}
+button {
+    width:120px;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    background-color: yellow;
+}
+button:hover {
+    background-color: #ff0000; 
+    color: white;
+  }

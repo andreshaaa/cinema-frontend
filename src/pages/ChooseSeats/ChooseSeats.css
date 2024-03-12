@@ -1,0 +1,15 @@
+.table-container {
+    color: black;
+    float: center;
+    margin: 16px;
+    width: 75% ;
+}
+.seatTableChoose {
+    float: center;
+   width: 705px;
+
+}
+.movieScreen {
+    background-color: white;
+    width: 800px;
+}
